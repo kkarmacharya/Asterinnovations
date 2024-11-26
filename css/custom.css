@@ -2334,6 +2334,7 @@ header.main-header .header-sticky.active .container-fluid::before{
 .footer-contact-info p span{
 	font-size: 20px;
 	font-weight: 600;
+	color: var(--white-color);
 }
 
 .footer-social-links{
