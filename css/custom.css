@@ -2431,13 +2431,16 @@ header.main-header .header-sticky.active .container-fluid::before{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg') no-repeat;
+	background: url('../images/page-header/samantha-gades-BlIhVfXbi9s-unsplash.jpg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	overflow: hidden;
 	padding: 250px 0 140px;
 	margin-top: -120px;
 }
+/* .page-header.contact-page-header{
+	background: url('../images/contact_us/miles-burke-idhx-MOCDSk-unsplash.jpg') no-repeat;
+} */
 
 .page-header:before{
 	content: '';
@@ -2447,7 +2450,7 @@ header.main-header .header-sticky.active .container-fluid::before{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(270deg, rgba(4, 42, 45, 0) 22.28%, var(--primary-color) 100%);
+	background: linear-gradient(180deg, rgba(4, 42, 45, 0) 72.28%, var(--primary-color) 100%);
 	z-index: 0;
 }
 
