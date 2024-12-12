@@ -4405,7 +4405,9 @@ header.main-header .header-sticky.active .container-fluid::before{
 	header.main-header .header-sticky.active .navbar{
 		padding: 20px 0;
 	}
-
+	.main-header .header-sticky .container-fluid{
+		padding-bottom: 20px;
+	}
 	.slicknav_nav li,
 	.slicknav_nav ul{
         display: block;
