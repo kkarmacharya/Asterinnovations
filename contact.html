@@ -394,5 +394,63 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
     <script src="js/main.js"></script>
+
+
+    <!--Email Js Intallation-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("vLzd3M5-qGJtiqnCY");  //This is the Public key for : nepal.dev20@asterinnovations.com
+    })();
+    </script>
+
+
+<script type="text/javascript">
+    // Add an event listener for form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();  // Prevent the default form submission behavior
+
+    // Get the form data
+    var firstName = document.getElementById("fname").value;
+    var lastName = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+  
+     //Service-Id: service_tinf4s2
+     //Template-Id: template_amas01s
+
+      // Send the email using EmailJS
+      emailjs.send("service_tinf4s2", "template_amas01s", {
+        first_name: firstName,
+      last_name: lastName,
+      email: email,
+      phone: phone,
+      message: message
+    })
+    .then(function(response) {
+      // Success handler
+      console.log("Message sent successfully", response);
+
+      // Success handler
+      console.log("Message sent successfully", response);
+
+      // Show a success alert
+      alert("Your message has been sent successfully!");
+
+      // Optionally, you can reset the form here
+      document.getElementById("contactForm").reset();
+    }, function(error) {
+          // Error handler
+          console.log("Failed to send message", error);
+
+        // Show an error alert
+        alert("Oops! Something went wrong. Please try again.");
+    });
+  });
+  </script>
+  
+
+
 </body>
 </html>
